@@ -1,0 +1,15 @@
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'user/nav.css' %}">
+    
+        <div class="navigation">
+            <ul>
+                <li><a href="{% url 'user:home' %}">Home</a></li>
+                <li><a href="{% url 'user:new' %}">New</a></li>
+                <li><a href="{% url 'user:all_users' %}">All Users</a></li>
+            </ul>
+        </div>
+
+        {% block body %}
+
+        {% endblock body %}
+

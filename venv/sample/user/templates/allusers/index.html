@@ -1,0 +1,21 @@
+{% extends 'base/index.html' %}
+
+
+{% block body %}
+
+{% comment %} {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'user/users.css' %}"> {% endcomment %}
+
+    <h1>users</h1>
+
+    {% for user in users %}
+    
+    <div class="user">
+        <h2>{{user.name}} </h2>
+        <h3>{{user.password}}</h3>
+    </div>
+    
+    {% endfor %}
+
+
+{% endblock body %}

@@ -1,0 +1,30 @@
+.user-form input {
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.user-form input:focus {
+    outline: none;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.user-form button {
+    background: linear-gradient(rgb(77, 0, 128), rgb(84, 18, 170));
+    border: 2px solid rgb(77, 0, 128);
+    padding: 1rem;
+    color: rgb(244, 179, 250);
+    border-radius: 5px;
+
+}
+
+.user-form button:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(103, 14, 163), rgb(128, 66, 209));
+}
+
+
+.user-form button:active, .user-form button:focus {
+    opacity: 0.85;
+    outline: none;
+}

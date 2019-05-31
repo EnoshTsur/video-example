@@ -1,0 +1,21 @@
+{% extends 'base/index.html' %}
+
+
+
+{% block body %}
+
+{% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'user/form.css' %}">
+
+<form class="user-form" action="{% url 'user:submit' %}" method="post">
+
+    {% csrf_token %} 
+    <input type="text" name="name" id="name" placeholder="Name"/>
+    <input type="password" name="password" id="password" placeholder="Password">
+    <button type="submit">Send</button>
+
+</form>
+
+
+{% endblock body %}
+
